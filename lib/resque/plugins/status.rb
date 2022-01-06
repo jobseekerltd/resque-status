@@ -130,7 +130,7 @@ module Resque
         # This is needed to be used with resque scheduler
         # http://github.com/bvandenbos/resque-scheduler
         def scheduled(queue, klass, *args)
-          self.enqueue_to(queue, self, *args)
+          Resque.enqueue_to(queue, self, *args)
         end
       end
 
