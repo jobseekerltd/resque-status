@@ -1,6 +1,6 @@
 source :rubygems
 
-gem 'resque', '~>1.23'
+gem 'resque', '~>2.7.0'
 
 group :test do
   gem 'mocha', '~>0.9.8'
